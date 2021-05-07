@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+ <div class="kebab">
+    <img src="kebab.png" alt="">
+ </div>
+
+<div class="kont">
+    <h2>Formularz kontaktowy</h2>
+</div>
+
+<div class="container">
+    <input type="text" placeholder="Imie" id="imie">
+    <p class="alert" id="imie-error">Błędne imie :/</p>
+    <input type="text" id="nazwisko" placeholder="Nazwisko">
+    <p class="alert" id="nazwisko-error">Błędne nazwisko :/</p>
+    <input type="text" id="ulica" placeholder="Ulica">
+    <p class="alert" id="ulica-error">Błędna Ulica :/</p>
+    <input type="email" id="email" placeholder="Email">
+    <p class="alert" id="email-error">Błędny email :/</p>
+    <input type="tel" id="telefon" placeholder="Telefon">
+    <p class="alert" id="telefon-error">Błędny numer :/</p>
+    <textarea name="" id="info" placeholder="Informacje"></textarea>
+    <p class="alert" id="info-error">Za krótka wiadomość. Proszę napisać dłuższą :D</p>
+    <button class="send" onclick="send()" id="send">Wyślij</button>
+</div>
+
+<div class="select">
+<select name="" id="" onchange="menu(value)">
+    <option value="">Wybierz danie</option>
+    <option value="dish1">Kebab w bułce</option>
+    <option value="dish2">Kebab Rollo</option>
+    <option value="dish3">Kebab Box</option>
+    <option value="dish4">Kebab na talerzu</option>
+    <option value="dish5">Zapiekanka</option>
+    <option value="dish6">Burger</option>
+    <option value="dish7">Nuggetsy</option>
+</select>
+
+<select name="" id="" onchange="menu(value)">
+    <option value="">Napoje</option>
+    <option value="drink1">Cola</option>
+    <option value="drink2">Pepsi</option>
+    <option value="drink3">Mirinda</option>
+    <option value="drink4">Fanta</option>
+    <option value="drink5">Sprite</option>
+    <option value="drink6">7UP</option>
+</select>
+</div>
+
+<div class="menu"><img src="menu.jpg" alt=""></div>
+
+</body>
+</html>
